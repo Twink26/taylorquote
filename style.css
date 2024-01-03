@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Playfair+Display:ital@1&family=Rubik+Doodle+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik Doodle Shadow;
+}
+
+body{
+    background-color: brown;
+}
+
+.quotebox{
+    background: wheat;
+    width: 700px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 13px;
+    border-color: black;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px black;
+
+}
+
+.quotebox h2{
+    font-size: 60px;
+    margin-top: 10px;
+
+
+
+}
+
+.quotebox h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: beige;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quotebox blockquote{
+    font-size: 26px;
+    min-height: 110px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    padding: 10px;
+
+
+}
+.quotebox blockquote::before, .quotebox blockquote::after{
+    content: '"';
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quotebox span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quotebox span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: brown;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    
+}
+
+.quotebox div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.quotebox button{
+    background-color: rgb(228, 205, 126);
+    border-radius: 10px;
+    border-color: black;
+    border:  solid;
+    width: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    height: 40px;
+    padding: 15px;
+}
+.quotebox button img{
+    width: 20px;
+    margin-right: 20px;
+    margin-left: 10%;
+}
+
+.quotebox button:nth-child(2){
+    background: transparent;
+    color: rgb(53, 139, 244);
+}
